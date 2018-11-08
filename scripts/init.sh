@@ -34,10 +34,6 @@ do
   echo "Cloning $project ..."
   git clone git@github.com:ec-europa/$project.git
   cd $project
-  if [ $project == "digit-ict-conf-2016" ] || [ $project == "digitec-news" ]
-  then
-    git checkout chore/update-prefix-INNO-1281
-  fi
   npm install
   cd ..
 done
